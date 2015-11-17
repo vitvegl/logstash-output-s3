@@ -101,7 +101,7 @@ class LogStash::Outputs::S3 < LogStash::Outputs::Base
 
   # Set the directory where logstash will store the tmp files before sending it to S3
   # default to the current OS temporary directory in linux /tmp/logstash
-  config :temporary_directory, :validate => :string, :default => File.join(Dir.tmpdir, "logstash")
+  config :temporary_directory, :validate => :string, :default => "/var/lib/logstash/S3_temp/"
 
   # Specify a prefix to the uploaded filename, this can simulate directories on S3
   config :prefix, :validate => :string, :default => ''
