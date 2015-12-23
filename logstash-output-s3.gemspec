@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.licenses        = ['Apache License (2.0)']
   s.summary         = "This plugin was created for store the logstash's events into Amazon Simple Storage Service (Amazon S3)"
   s.description     = "This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/plugin install gemname. This gem is not a stand-alone program"
-  s.authors         = ["Elastic"]
+  s.authors         = ["Elastic", "vitvegl@quintagroup.org"]
   s.email           = 'info@elastic.co'
   s.homepage        = "http://www.elastic.co/guide/en/logstash/current/index.html"
   s.require_paths = ["lib"]
